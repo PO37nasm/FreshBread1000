@@ -33,8 +33,9 @@ public class WaveManager : MonoBehaviour
         offset += Time.deltaTime * speed;
     }
 
-    public float GetWaveHeight(float _x)
+    public float GetWaveHeight(float _x, float _y)
     {
-        return amplitude * Mathf.Sin(_x / length + offset);
+        //return amplitude * Mathf.Sin(_x / length + offset);
+        return amplitude * Mathf.Sin(_x + offset);
     }
 }
