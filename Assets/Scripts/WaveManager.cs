@@ -9,11 +9,15 @@ public class WaveManager : MonoBehaviour
     [SerializeField]
     private float amplitude = 1f;
     [SerializeField]
-    private float length = 2f;
+    private float phase = 1f;
     [SerializeField]
-    private float speed = 1f;
+    private float gravity = 9;//-Physics.gravity.y;
     [SerializeField]
-    private float offset = 0f;
+    private float timeScale = 1f;
+    [SerializeField]
+    private float depth = 10f;
+    [SerializeField]
+    private Vector3 direction = new Vector3(0.1f, 0, 0);
 
     private void Awake()
     {
@@ -28,14 +32,15 @@ public class WaveManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    public float GetWaveHeight(float _x, float _y, float _z)
     {
-        offset += Time.deltaTime * speed;
-    }
+        float frequency = Mathf.Sqrt(gravity * direction.magnitude * (float)(System.Math.Tanh(depth * direction.magnitude)));
+        float theta = (_x * direction.x) + (_z * direction.z) - frequency * (Time.time * timeScale) - phase;
 
-    public float GetWaveHeight(float _x, float _y)
-    {
-        //return amplitude * Mathf.Sin(_x / length + offset);
-        return amplitude * Mathf.Sin(_x + offset);
+        //float X = (-(Mathf.Sin(theta) * ((direction.x / direction.magnitude) * (amplitude / (float)System.Math.Tanh(direction.magnitude * depth)))));
+        float Y = Mathf.Cos(theta) * amplitude;
+        //float Z = ((Mathf.Sin(theta) * ((direction.z / direction.magnitude) * (amplitude / (float)System.Math.Tanh(direction.magnitude * depth)))));
+
+        return Y;
     }
 }
