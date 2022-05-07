@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
-    public CharacterController controller;
-
+    [SerializeField]
+    private CharacterController controller;
+    [SerializeField]
+    private Rigidbody body;
     [SerializeField]
     private float speed = 6f;
 
@@ -18,7 +20,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (direction.magnitude >= 0.1f)
         {
-
+            body.AddForce(direction * speed * Time.deltaTime, ForceMode.VelocityChange);
         }
     }
 }
