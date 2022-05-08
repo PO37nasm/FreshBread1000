@@ -31,5 +31,7 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             body.AddTorque(0f, horizontal, 0f);
         }
+        
     }
+
 }

@@ -53,7 +53,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1913
+  Length: 2133
 --- !u!114 &-6379220005739547743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637873024278215239
+  lastModified: 637876443316312298
   FileSizes:
   - Name: Desktop
     Value: 1642
@@ -220,7 +220,7 @@ MonoBehaviour:
   - {fileID: -1187654713755420656}
   StringsBanks:
   - {fileID: 8325601505180184753}
-  cacheTime: 637873024278245244
+  cacheTime: 637876443316793944
   cacheVersion: 10
 --- !u!114 &364955689405205204
 MonoBehaviour:
@@ -237,7 +237,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 637873024277164823
+  lastModified: 637876443315792212
   FileSizes:
   - Name: Desktop
     Value: 482
@@ -257,7 +257,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 637873024277925178
+  lastModified: 637876443316793944
   FileSizes:
   - Name: Desktop
     Value: 26880
@@ -359,7 +359,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Interactables.bank
   Name: Interactables
   StudioPath: bank:/Interactables
-  lastModified: 637873024277689866
+  lastModified: 637876443316272286
   FileSizes:
   - Name: Desktop
     Value: 22976
@@ -379,10 +379,10 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Boat.bank
   Name: Boat
   StudioPath: bank:/Boat
-  lastModified: 637873024277124814
+  lastModified: 637876443315752203
   FileSizes:
   - Name: Desktop
-    Value: 668256
+    Value: 668608
   Exists: 1
 --- !u!114 &6322395778209941447
 MonoBehaviour:
@@ -399,10 +399,10 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Enviroment.bank
   Name: Enviroment
   StudioPath: bank:/Enviroment
-  lastModified: 637873024277414885
+  lastModified: 637876443316039447
   FileSizes:
   - Name: Desktop
-    Value: 485824
+    Value: 485952
   Exists: 1
 --- !u!114 &6436539919339039829
 MonoBehaviour:
@@ -419,12 +419,12 @@ MonoBehaviour:
   Name: BoatMotion
   StudioPath: 
   Min: 0
-  Max: 1
-  Default: 1
+  Max: 10
+  Default: 10
   ID:
     data1: 2257672364
     data2: 2624453574
-  Type: 1
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -443,7 +443,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637873024278175230
+  lastModified: 637876443316552492
   FileSizes:
   - Name: Desktop
     Value: 1392256
@@ -490,7 +490,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637873024278245244
+  lastModified: 637876443316332298
   FileSizes:
   - Name: Desktop
     Value: 1684
