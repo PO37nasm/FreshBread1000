@@ -81,6 +81,58 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3186
+--- !u!114 &-5480224793809561609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BoatRevs/BoatAccelDecel
+  m_EditorClassIdentifier: 
+  Name: BoatAccelDecel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3495221904
+    data2: 1573210615
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5403353076303649837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boat/BoatRevs
+  m_EditorClassIdentifier: 
+  Path: event:/Boat/BoatRevs
+  Guid:
+    Data1: 1564126974
+    Data2: 1337721655
+    Data3: 1991759247
+    Data4: 135156859
+  Banks:
+  - {fileID: 4688066533939316900}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5480224793809561609}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &-5277125934898223014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +160,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-3822693290216727136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DX/VoiceMessages
+  m_EditorClassIdentifier: 
+  Path: event:/DX/VoiceMessages
+  Guid:
+    Data1: 751760461
+    Data2: 1333910578
+    Data3: 861413765
+    Data4: -463445464
+  Banks:
+  - {fileID: 364955689405205204}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 38805
 --- !u!114 &-2625625405836646224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +256,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637876443316312298
+  lastModified: 637877304025353399
   FileSizes:
   - Name: Desktop
     Value: 1642
@@ -215,12 +294,14 @@ MonoBehaviour:
   - {fileID: -2625625405836646224}
   - {fileID: 8509769081269687259}
   - {fileID: 7426022201023842777}
+  - {fileID: -5403353076303649837}
+  - {fileID: -3822693290216727136}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1187654713755420656}
   StringsBanks:
   - {fileID: 8325601505180184753}
-  cacheTime: 637876443316793944
+  cacheTime: 637877304025953533
   cacheVersion: 10
 --- !u!114 &364955689405205204
 MonoBehaviour:
@@ -237,10 +318,10 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 637876443315792212
+  lastModified: 637877304024683246
   FileSizes:
   - Name: Desktop
-    Value: 482
+    Value: 408544
   Exists: 1
 --- !u!114 &821172210002577292
 MonoBehaviour:
@@ -257,7 +338,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 637876443316793944
+  lastModified: 637877304025953533
   FileSizes:
   - Name: Desktop
     Value: 26880
@@ -287,7 +368,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 6436539919339039829}
-  MinDistance: 1
+  MinDistance: 0
   MaxDistance: 20
   Length: 15177
 --- !u!114 &2685678519816002560
@@ -359,7 +440,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Interactables.bank
   Name: Interactables
   StudioPath: bank:/Interactables
-  lastModified: 637876443316272286
+  lastModified: 637877304025313387
   FileSizes:
   - Name: Desktop
     Value: 22976
@@ -379,10 +460,10 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Boat.bank
   Name: Boat
   StudioPath: bank:/Boat
-  lastModified: 637876443315752203
+  lastModified: 637877304020559670
   FileSizes:
   - Name: Desktop
-    Value: 668608
+    Value: 717920
   Exists: 1
 --- !u!114 &6322395778209941447
 MonoBehaviour:
@@ -399,10 +480,10 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Enviroment.bank
   Name: Enviroment
   StudioPath: bank:/Enviroment
-  lastModified: 637876443316039447
+  lastModified: 637877304025003314
   FileSizes:
   - Name: Desktop
-    Value: 485952
+    Value: 455360
   Exists: 1
 --- !u!114 &6436539919339039829
 MonoBehaviour:
@@ -443,7 +524,7 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637876443316552492
+  lastModified: 637877304025663462
   FileSizes:
   - Name: Desktop
     Value: 1392256
@@ -490,10 +571,10 @@ MonoBehaviour:
   Path: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637876443316332298
+  lastModified: 637877304025373404
   FileSizes:
   - Name: Desktop
-    Value: 1684
+    Value: 1818
   Exists: 1
 --- !u!114 &8509769081269687259
 MonoBehaviour:
