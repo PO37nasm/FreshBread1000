@@ -15,6 +15,10 @@ public class NightDaySwitch : MonoBehaviour
     public GameObject NightLight;
 
     public GameObject DayNightArt;
+    public GameObject CrossfadePanel;
+
+    float timer = 0;
+    float duration = 1f;
 
     private void ExecuteTrigger (string trigger)
     {
@@ -22,6 +26,12 @@ public class NightDaySwitch : MonoBehaviour
         if(animator != null)
         {
             animator.SetTrigger(trigger);
+        }
+
+        var animator2 = CrossfadePanel.GetComponent<Animator>();
+        if (animator2 != null)
+        {
+            animator2.SetTrigger(trigger);
         }
     }
 
@@ -31,11 +41,22 @@ public class NightDaySwitch : MonoBehaviour
         { // if it is currently day, change to night
             day = false;
             night = true;
-            RenderSettings.skybox = NightSky;
-            NightLight.SetActive(true);
-            DayLight.SetActive(false);
-            RenderSettings.fogColor = new Color32(33, 28, 49, 255);
+
+            //animate spin and crossfade
             ExecuteTrigger("DayToNight");
+            ExecuteTrigger("Crossfade");
+
+            //timer += Time.deltaTime;
+            //if (timer >= duration)
+            //{
+            //    timer = 0;
+            RenderSettings.skybox = NightSky;
+                NightLight.SetActive(true);
+                DayLight.SetActive(false);
+                RenderSettings.fogColor = new Color32(33, 28, 49, 255);
+
+            //}
+
 
         }
 
@@ -49,6 +70,8 @@ public class NightDaySwitch : MonoBehaviour
             RenderSettings.fogColor = new Color32(139, 203, 211, 255);
             DayNightArt.transform.Rotate(0f, 0f, 180f);
             ExecuteTrigger("NightToDay");
+            ExecuteTrigger("Crossfade");
+
         }
     }
 
