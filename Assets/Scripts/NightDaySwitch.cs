@@ -14,6 +14,17 @@ public class NightDaySwitch : MonoBehaviour
     public GameObject DayLight;
     public GameObject NightLight;
 
+    public GameObject DayNightArt;
+
+    private void ExecuteTrigger (string trigger)
+    {
+        var animator = DayNightArt.GetComponent<Animator>();
+        if(animator != null)
+        {
+            animator.SetTrigger(trigger);
+        }
+    }
+
     public void ChangeDayNight()
     {
         if (day)
@@ -23,8 +34,9 @@ public class NightDaySwitch : MonoBehaviour
             RenderSettings.skybox = NightSky;
             NightLight.SetActive(true);
             DayLight.SetActive(false);
-            // Set the fog color to be blue
-            RenderSettings.fogColor = Color.blue;
+            RenderSettings.fogColor = new Color32(33, 28, 49, 255);
+            ExecuteTrigger("DayToNight");
+
         }
 
         else if (night)
@@ -34,7 +46,9 @@ public class NightDaySwitch : MonoBehaviour
             RenderSettings.skybox = DaySky;
             DayLight.SetActive(true);
             NightLight.SetActive(false);
-            RenderSettings.fogColor = Color.blue;
+            RenderSettings.fogColor = new Color32(139, 203, 211, 255);
+            DayNightArt.transform.Rotate(0f, 0f, 180f);
+            ExecuteTrigger("NightToDay");
         }
     }
 
