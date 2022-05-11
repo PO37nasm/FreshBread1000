@@ -18,7 +18,7 @@ public class NightDaySwitch : MonoBehaviour
     public GameObject CrossfadePanel;
 
     float timer = 0;
-    float duration = 1f;
+    float duration = 0.5f;
 
     private void ExecuteTrigger (string trigger)
     {
@@ -46,17 +46,24 @@ public class NightDaySwitch : MonoBehaviour
             ExecuteTrigger("DayToNight");
             ExecuteTrigger("Crossfade");
 
-            //timer += Time.deltaTime;
-            //if (timer >= duration)
+
+            //trying to get unity to wait for 0.5 seconds before doing the next bit, but no luck so far!
+            //timer = 0;
+            //int count = 0;
+            //while (timer < duration && count < 10000)
             //{
-            //    timer = 0;
-            RenderSettings.skybox = NightSky;
-                NightLight.SetActive(true);
-                DayLight.SetActive(false);
-                RenderSettings.fogColor = new Color32(33, 28, 49, 255);
-
+            //    timer += Time.deltaTime;
+            //    count++;
             //}
+            //timer = 0;
 
+
+            RenderSettings.skybox = NightSky;
+            DayLight.SetActive(false);
+            NightLight.SetActive(true);
+            RenderSettings.fogColor = new Color32(33, 28, 49, 255);
+            ExecuteTrigger("DayToNight");
+            ExecuteTrigger("Crossfade");
 
         }
 
@@ -68,7 +75,6 @@ public class NightDaySwitch : MonoBehaviour
             DayLight.SetActive(true);
             NightLight.SetActive(false);
             RenderSettings.fogColor = new Color32(139, 203, 211, 255);
-            DayNightArt.transform.Rotate(0f, 0f, 180f);
             ExecuteTrigger("NightToDay");
             ExecuteTrigger("Crossfade");
 
