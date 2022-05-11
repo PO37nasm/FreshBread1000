@@ -17,8 +17,9 @@ public class NightDaySwitch : MonoBehaviour
     public GameObject DayNightArt;
     public GameObject CrossfadePanel;
 
+    private bool clockPressed;
     float timer = 0;
-    float duration = 0.5f;
+    float duration = 0.8f;
 
     private void ExecuteTrigger (string trigger)
     {
@@ -35,50 +36,59 @@ public class NightDaySwitch : MonoBehaviour
         }
     }
 
-    public void ChangeDayNight()
-    {
-        if (day)
-        { // if it is currently day, change to night
-            day = false;
-            night = true;
-
+        public void ChangeDayNight() 
             //animate spin and crossfade
-            ExecuteTrigger("DayToNight");
-            ExecuteTrigger("Crossfade");
+        {
+            if (day)
+            { // if it is currently day, change to night
+                clockPressed = true;
+                ExecuteTrigger("DayToNight");
+                ExecuteTrigger("Crossfade");
+            }
 
-
-            //trying to get unity to wait for 0.5 seconds before doing the next bit, but no luck so far!
-            //timer = 0;
-            //int count = 0;
-            //while (timer < duration && count < 10000)
-            //{
-            //    timer += Time.deltaTime;
-            //    count++;
-            //}
-            //timer = 0;
-
-
-            RenderSettings.skybox = NightSky;
-            DayLight.SetActive(false);
-            NightLight.SetActive(true);
-            RenderSettings.fogColor = new Color32(33, 28, 49, 255);
-            ExecuteTrigger("DayToNight");
-            ExecuteTrigger("Crossfade");
-
+            else if (night)
+            { // if it is currently night, change to day
+                clockPressed = true;
+                ExecuteTrigger("NightToDay");
+                ExecuteTrigger("Crossfade");
+            }
         }
 
-        else if (night)
-        { // if it is currently night, change to day
-            night = false;
-            day = true;
-            RenderSettings.skybox = DaySky;
-            DayLight.SetActive(true);
-            NightLight.SetActive(false);
-            RenderSettings.fogColor = new Color32(139, 203, 211, 255);
-            ExecuteTrigger("NightToDay");
-            ExecuteTrigger("Crossfade");
 
+    void Update ()
+    {
+        if (clockPressed)
+        {
+            //wait for 0.5 seconds
+            timer += Time.deltaTime;
+            if (timer >= duration)
+            {
+                //after delay, change skybox, lights and fog
+                if (day)
+                { // if it is currently day, change to night
+                    RenderSettings.skybox = NightSky;
+                    DayLight.SetActive(false);
+                    NightLight.SetActive(true);
+                    RenderSettings.fogColor = new Color32(33, 28, 49, 255);
+                    day = false;
+                    night = true;
+                }
+
+                else if (night)
+                { // if it is currently night, change to day
+                    RenderSettings.skybox = DaySky;
+                    DayLight.SetActive(true);
+                    NightLight.SetActive(false);
+                    RenderSettings.fogColor = new Color32(139, 203, 211, 255);
+                    night = false;
+                    day = true;
+                }
+
+                timer = 0;
+                clockPressed = false;
+            }
         }
+
     }
 
 }
