@@ -463,8 +463,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/FMODSession.fspro
-  sourceBankPath: ../../../Desktop/ActiveProjects/MayGameJam/FMODSession/Build
+  sourceProjectPath: FMODSession/FMODSession.fspro
+  sourceBankPath: FMODSession/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
