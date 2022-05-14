@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{5eda72cc-164d-4e4b-8062-0b43e9c237dd}">
+		<property name="name">
+			<value>BoatMotion</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a2b2fb35-12e8-4171-a06c-234b6bd91686}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{57d3126b-d69a-45e2-ae54-dd107ccd3c81}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{57d3126b-d69a-45e2-ae54-dd107ccd3c81}">
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>10</value>
+		</property>
+		<property name="seekSpeed">
+			<value>36</value>
+		</property>
+	</object>
+</objects>

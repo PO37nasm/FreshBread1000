@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{59eafc3c-2276-4102-a239-5c23bb9964c3}">
+		<property name="assetPath">
+			<value>Boat/BoatBell_05.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.0777916666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{99614979-4536-44b0-8167-fefa76311e3d}</destination>
+		</relationship>
+	</object>
+</objects>

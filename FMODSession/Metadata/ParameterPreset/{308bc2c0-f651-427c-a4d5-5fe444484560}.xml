@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{308bc2c0-f651-427c-a4d5-5fe444484560}">
+		<property name="name">
+			<value>BoatAccelDecel</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a2b2fb35-12e8-4171-a06c-234b6bd91686}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{084a53f8-16e9-4c41-b85f-52d15e9c9022}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{084a53f8-16e9-4c41-b85f-52d15e9c9022}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
