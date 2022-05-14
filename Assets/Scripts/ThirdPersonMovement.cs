@@ -10,9 +10,10 @@ public class ThirdPersonMovement : MonoBehaviour
     private float speed = 6f;
     [SerializeField]
     private float rotationTorque = 0.1f;
-
+    [SerializeField]
+    private Vector3 rescueDropLocation;
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -41,6 +42,11 @@ public class ThirdPersonMovement : MonoBehaviour
             body.AddTorque(0f, horizontal * rotationTorque, 0f);
         }
         
+    }
+
+    public void Rescue()
+    {
+        transform.position = rescueDropLocation;
     }
 
 }
