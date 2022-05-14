@@ -37,9 +37,17 @@ public class WaveManager : MonoBehaviour
         float frequency = Mathf.Sqrt(gravity * direction.magnitude * (float)(System.Math.Tanh(depth * direction.magnitude)));
         float theta = (_x * direction.x) + (_z * direction.z) - frequency * (Time.time * timeScale) - phase;
 
-        //float X = (-(Mathf.Sin(theta) * ((direction.x / direction.magnitude) * (amplitude / (float)System.Math.Tanh(direction.magnitude * depth)))));
+        float X = (-(Mathf.Sin(theta) * ((direction.x / direction.magnitude) * (amplitude / (float)System.Math.Tanh(direction.magnitude * depth)))));
+        float Z = ((Mathf.Sin(theta) * ((direction.z / direction.magnitude) * (amplitude / (float)System.Math.Tanh(direction.magnitude * depth)))));
+
+        float xDisplacement = _x + X;
+        float zDisplacement = _z + Z;
+
+        //float zeta = (xDisplacement * direction.x) + (zDisplacement * direction.z) - frequency * (Time.time * timeScale) - phase;
+
         float Y = Mathf.Cos(theta) * amplitude;
-        //float Z = ((Mathf.Sin(theta) * ((direction.z / direction.magnitude) * (amplitude / (float)System.Math.Tanh(direction.magnitude * depth)))));
+
+        //Debug.Log("X = " + X + "Z =" + Z);//"Theta:" + theta + " Zeta:" + zeta);
 
         return Y;
     }
