@@ -27,7 +27,7 @@ public class F_BoatMotor : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        if (vertical >= 0.1f || horizontal >= 0.1f || horizontal <= -0.1f)
+        if (vertical >= 0.1f || horizontal >= 0.1f || horizontal <= -0.1f || vertical <= -0.1f)
         {
             BoatMotor.setParameterByName("BoatMotion", 0f, false);
             BoatRevs.setParameterByName("BoatAccelDecel", 0f);

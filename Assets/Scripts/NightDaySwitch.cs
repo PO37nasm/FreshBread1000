@@ -34,6 +34,8 @@ public class NightDaySwitch : MonoBehaviour
         {
             animator2.SetTrigger(trigger);
         }
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/ClockTick");
     }
 
         public void ChangeDayNight() 
