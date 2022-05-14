@@ -10,10 +10,6 @@ public class Timer: MonoBehaviour
     private float startTime = 0f;
     [SerializeField]
     private TMP_Text timer;
-    [SerializeField]
-    private AudioClip loseSound;
-    [SerializeField]
-    private AudioClip countDown;
     private bool countDownStarted = false;
     [SerializeField]
     private float countDownStartTime = 60.5f;
@@ -54,12 +50,10 @@ public class Timer: MonoBehaviour
         if (Time.timeSinceLevelLoad > arriveTime)
         {
             timer.gameObject.SetActive(false);
-            GetComponent<AudioSource>().PlayOneShot(loseSound);
             GetComponent<GameOverMenu>().GameOver();
         }
         if (Time.timeSinceLevelLoad > arriveTime - countDownStartTime && !countDownStarted)
         {
-            GetComponent<AudioSource>().PlayOneShot(countDown);
             if (FindObjectOfType<MusicControl>() != null) { FindObjectOfType<MusicControl>().StopMusic(); }
             countDownStarted = true;
         }

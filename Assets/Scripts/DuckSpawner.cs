@@ -22,7 +22,7 @@ public class DuckSpawner : MonoBehaviour
 
             if (terrain.SampleHeight(spawnPoint) < 55)
             {
-                Debug.Log("Checking height at" + spawnPoint + ":" + terrain.SampleHeight(spawnPoint));
+                //Debug.Log("Checking height at" + spawnPoint + ":" + terrain.SampleHeight(spawnPoint));
                 Instantiate<GameObject>(duck, spawnPoint, Quaternion.identity, duckParent);
                 i++;
             }
