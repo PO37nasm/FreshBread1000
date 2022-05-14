@@ -62,10 +62,12 @@ public class PauseMenu : MonoBehaviour
     public void OpenOptionsMenu()
     {
         optionsMenu.SetActive(true);
+        pauseMenuUI.SetActive(false);
     }
 
     public void CloseOptionsMenu()
     {
+        pauseMenuUI.SetActive(true);
         optionsMenu.SetActive(false);
     }
 

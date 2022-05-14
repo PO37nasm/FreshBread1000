@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameOverMenu : MonoBehaviour
 {
     public GameObject gameOverUI;
     public static bool GameIsOver = false;
     public int currentScene;
+    [SerializeField]
+    private TMP_Text scoreUI;
+    
 
     public void GameOver()
     {
@@ -15,6 +19,7 @@ public class GameOverMenu : MonoBehaviour
         Time.timeScale = 0f;
         gameOverUI.SetActive(true);
         GameIsOver = true;
+        scoreUI.text = GetScore();
         PauseMenu.GameIsPaused = true;
     }
 
@@ -25,5 +30,10 @@ public class GameOverMenu : MonoBehaviour
         SceneManager.LoadScene(currentScene);
         GameIsOver = false;
         Time.timeScale = 1f;
+    }
+
+    public static string GetScore()
+    {
+        return "Ducks Collected: " + GameManager.ducksCollected;
     }
 }
