@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ca503150-4c3c-4bd6-8bb8-9a012ba77aeb}">
+		<property name="assetPath">
+			<value>DX/AC_Phone_Ringtone_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.8499791666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{99614979-4536-44b0-8167-fefa76311e3d}</destination>
+		</relationship>
+	</object>
+</objects>

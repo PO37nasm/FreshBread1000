@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{571bd822-864a-4876-b713-426e7f7de4bc}">
+		<property name="assetPath">
+			<value>Music/Duck_C.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>122.51428571428572</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{99614979-4536-44b0-8167-fefa76311e3d}</destination>
+		</relationship>
+	</object>
+</objects>
