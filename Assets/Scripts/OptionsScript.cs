@@ -12,23 +12,26 @@ public class OptionsScript : MonoBehaviour
     Resolution[] resolutions;
     private void Start()
     {
-        resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
-        resolutionDropdown.ClearOptions();
-        List<string> options = new List<string>();
-        int currentResolutionIndex = 0;
-        for (int i = 0; i < resolutions.Length; i++)
+        if (resolutionDropdown != null)
         {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
-
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
+            resolutionDropdown.ClearOptions();
+            List<string> options = new List<string>();
+            int currentResolutionIndex = 0;
+            for (int i = 0; i < resolutions.Length; i++)
             {
-                currentResolutionIndex = i;
+                string option = resolutions[i].width + " x " + resolutions[i].height;
+                options.Add(option);
+
+                if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+                {
+                    currentResolutionIndex = i;
+                }
             }
+            resolutionDropdown.AddOptions(options);
+            resolutionDropdown.value = currentResolutionIndex;
+            resolutionDropdown.RefreshShownValue();
         }
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
 
     }
 
@@ -39,7 +42,8 @@ public class OptionsScript : MonoBehaviour
 
     public void SetResolution(int resolutionIndex)
     {
-        Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            Resolution resolution = resolutions[resolutionIndex];
+            Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+
     }
 }
