@@ -28,6 +28,10 @@ public class F_Slider : MonoBehaviour
         {
             LevelTest = RuntimeManager.CreateInstance("event:/UI/AudioSlider");
         }
+        else if (vcaPath == "SFX")
+        {
+            LevelTest = RuntimeManager.CreateInstance("event:/UI/AudioSlider");
+        }
         else
             LevelTest.release();
     }
@@ -36,6 +40,12 @@ public class F_Slider : MonoBehaviour
     {
         vca.setVolume(SliderValue);
         if (vcaPath == "Master")
+        {
+            LevelTest.getPlaybackState(out pb);
+            if (pb != PLAYBACK_STATE.PLAYING)
+                LevelTest.start();
+        }
+        else if (vcaPath == "SFX")
         {
             LevelTest.getPlaybackState(out pb);
             if (pb != PLAYBACK_STATE.PLAYING)

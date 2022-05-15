@@ -138,7 +138,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{c8d7c382-4439-4f3d-84cb-a662b50a006b}">
 		<property name="volume">
-			<value>4.5</value>
+			<value>10</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{1b16d34b-cc8d-40ed-8aeb-42fbcec28fef}</destination>
@@ -414,7 +414,16 @@
 	<object class="MixerBusFader" id="{3a0d0d50-5bee-4b58-8d6c-7d941095b253}" />
 	<object class="SpatialiserEffect" id="{53b244ce-2eb8-4a41-a05d-e5dc86f216aa}">
 		<property name="minimumDistance">
-			<value>0</value>
+			<value>5.20000029</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>10000</value>
+		</property>
+		<property name="minimumExtent">
+			<value>360</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{30595601-151a-4efd-9124-80e3e6228654}" />
@@ -455,7 +464,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-13.5</value>
+			<value>-7</value>
 		</property>
 		<property name="curveShape">
 			<value>0.469482452</value>
@@ -493,7 +502,7 @@
 			<value>9.515599343185551</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>6</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{54829091-ff99-442e-9b31-f69558b1ecc5}">
@@ -501,7 +510,7 @@
 			<value>10</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>6</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{6b985456-51fd-4607-8929-492557984e49}">
@@ -509,7 +518,7 @@
 			<value>0.50082089117156225</value>
 		</property>
 		<property name="value">
-			<value>-27</value>
+			<value>-18.8999996</value>
 		</property>
 		<property name="curveShape">
 			<value>-0.351508021</value>

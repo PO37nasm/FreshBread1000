@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 637880784065691118
+  lastModified: 637882125637059018
   FileSizes:
   - Name: Desktop
     Value: 26880
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Boat.bank
   Name: Boat
   StudioPath: bank:/Boat
-  lastModified: 637880784064030026
+  lastModified: 637882125635477328
   FileSizes:
   - Name: Desktop
-    Value: 717920
+    Value: 727520
   Exists: 1
 --- !u!114 &-7327805130549394498
 MonoBehaviour:
@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Enviroment.bank
   Name: Enviroment
   StudioPath: bank:/Enviroment
-  lastModified: 637880784064710907
+  lastModified: 637882125636123516
   FileSizes:
   - Name: Desktop
     Value: 455360
@@ -167,7 +167,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 316189
+  Length: 276189
 --- !u!114 &-5819696782632001608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,10 +183,10 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637880784065030976
+  lastModified: 637882125636433587
   FileSizes:
   - Name: Desktop
-    Value: 2016
+    Value: 2198
   Exists: 1
 --- !u!114 &-5762502311359469640
 MonoBehaviour:
@@ -254,7 +254,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Interactables.bank
   Name: Interactables
   StudioPath: bank:/Interactables
-  lastModified: 637880784064950969
+  lastModified: 637882125636363575
   FileSizes:
   - Name: Desktop
     Value: 222528
@@ -287,33 +287,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
---- !u!114 &-5277125934898223014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enviroment/Seagulls
-  m_EditorClassIdentifier: 
-  Path: event:/Enviroment/Seagulls
-  Guid:
-    Data1: -327434323
-    Data2: 1284258962
-    Data3: 8677001
-    Data4: -1427243764
-  Banks:
-  - {fileID: -7327805130549394498}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &-3822693290216727136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +314,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 138805
+--- !u!114 &-2993778559417390723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/Seagulls
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/Seagulls
+  Guid:
+    Data1: -327434323
+    Data2: 1284258962
+    Data3: 8677001
+    Data4: -1427243764
+  Banks:
+  - {fileID: -7327805130549394498}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-2625625405836646224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +368,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 310
+--- !u!114 &-2320629630542852086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Cutscene.bank
+  m_EditorClassIdentifier: 
+  Path: FMODSession/Build/Desktop/Cutscene.bank
+  Name: Cutscene
+  StudioPath: bank:/Cutscene
+  lastModified: 637882125637429099
+  FileSizes:
+  - Name: Desktop
+    Value: 2266176
+  Exists: 1
 --- !u!114 &-1782559195464828878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +430,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637880784065451071
+  lastModified: 637882125636828963
   FileSizes:
   - Name: Desktop
     Value: 2853344
@@ -430,11 +450,38 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637880784065000993
+  lastModified: 637882125636413583
   FileSizes:
   - Name: Desktop
-    Value: 3514
+    Value: 3800
   Exists: 1
+--- !u!114 &-846049235677799948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Cutscenes/Cutscene
+  m_EditorClassIdentifier: 
+  Path: event:/Cutscenes/Cutscene
+  Guid:
+    Data1: 1359381263
+    Data2: 1215346069
+    Data3: -757361995
+    Data4: -1286437436
+  Banks:
+  - {fileID: -2320629630542852086}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10167
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,12 +503,11 @@ MonoBehaviour:
   - {fileID: -1322144442078796533}
   - {fileID: -1441844269261317095}
   - {fileID: -8869298112581347084}
+  - {fileID: -2320629630542852086}
   EditorEvents:
   - {fileID: 2112585537062525686}
   - {fileID: -6379220005739547743}
   - {fileID: -6837886624637513259}
-  - {fileID: -5277125934898223014}
-  - {fileID: 2685678519816002560}
   - {fileID: -1782559195464828878}
   - {fileID: 4264878929459777824}
   - {fileID: -8460872006966036763}
@@ -473,12 +519,15 @@ MonoBehaviour:
   - {fileID: 1175162954563623149}
   - {fileID: -5829166512843080548}
   - {fileID: 5514981539926120251}
+  - {fileID: -2993778559417390723}
+  - {fileID: 7043555834419115319}
+  - {fileID: -846049235677799948}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1322144442078796533}
   StringsBanks:
   - {fileID: -5819696782632001608}
-  cacheTime: 637880784065691118
+  cacheTime: 637882125637429099
   cacheVersion: 10
 --- !u!114 &1175162954563623149
 MonoBehaviour:
@@ -532,36 +581,9 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 6436539919339039829}
-  MinDistance: 0
+  MinDistance: 5.2000003
   MaxDistance: 20
   Length: 15177
---- !u!114 &2685678519816002560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enviroment/OceanWaves
-  m_EditorClassIdentifier: 
-  Path: event:/Enviroment/OceanWaves
-  Guid:
-    Data1: -2023078178
-    Data2: 1275042319
-    Data3: 463127189
-    Data4: -403419667
-  Banks:
-  - {fileID: -7327805130549394498}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 32669
 --- !u!114 &3975177747285233203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +599,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 637880784064420836
+  lastModified: 637882125635873293
   FileSizes:
   - Name: Desktop
     Value: 1720992
@@ -661,6 +683,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &7043555834419115319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enviroment/OceanWaves
+  m_EditorClassIdentifier: 
+  Path: event:/Enviroment/OceanWaves
+  Guid:
+    Data1: -2023078178
+    Data2: 1275042319
+    Data3: 463127189
+    Data4: -403419667
+  Banks:
+  - {fileID: -7327805130549394498}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 32669
 --- !u!114 &8509769081269687259
 MonoBehaviour:
   m_ObjectHideFlags: 0
