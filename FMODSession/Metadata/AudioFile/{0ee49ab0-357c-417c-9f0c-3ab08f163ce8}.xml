@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
-	<object class="AudioFile" id="{392357cc-bd4c-4aa1-8b45-847e47836eca}">
+	<object class="AudioFile" id="{0ee49ab0-357c-417c-9f0c-3ab08f163ce8}">
 		<property name="assetPath">
-			<value>Boat/EngineRevs-002.wav</value>
+			<value>Foley/Laminate_Steps_Shoes-002.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>4.3218367346938775</value>
+			<value>1.4071655328798185</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{99614979-4536-44b0-8167-fefa76311e3d}</destination>
