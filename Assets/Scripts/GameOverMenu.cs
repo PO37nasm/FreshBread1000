@@ -45,7 +45,27 @@ public class GameOverMenu : MonoBehaviour
 
     public void SetCreditsScore()
     {
-        creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, but there are still so many left...";
+        if (GameManager.ducksCollected == 1000)
+        {
+            creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks... Incredible! You know I really thought that would be impossible.";
+        }
+        else if (GameManager.ducksCollected >= 900)
+        {
+            creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, not too many left...";
+        }
+        else if (GameManager.ducksCollected >= 500)
+        {
+            creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, an impressive effort...";
+        }
+        else if (GameManager.ducksCollected < 1)
+        {
+            creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, come on, really?";
+        }
+        else
+        {
+            creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, but there are still so many left...";
+        }
+
 
     }
 }
