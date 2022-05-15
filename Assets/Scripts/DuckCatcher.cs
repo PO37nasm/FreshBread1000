@@ -16,8 +16,7 @@ public class DuckCatcher : MonoBehaviour
         {
             //add a duck to the boat and Destroy the duck in the water
             //Debug.Log("Caught a Duck");
-            GameObject newDuck = Instantiate<GameObject>(duck, caughtDuckSpawnPoint);
-            newDuck.GetComponentInChildren<Light>().enabled = false;
+            Instantiate<GameObject>(duck, caughtDuckSpawnPoint);
             Destroy(collision.gameObject);
             FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Interactables/PickupItem", gameObject);
             GameManager.AddDuck();

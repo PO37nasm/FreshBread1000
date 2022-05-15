@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 637882165417537197
+  lastModified: 637882367413827928
   FileSizes:
   - Name: Desktop
     Value: 26880
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Boat.bank
   Name: Boat
   StudioPath: bank:/Boat
-  lastModified: 637882348250220192
+  lastModified: 637882367411843031
   FileSizes:
   - Name: Desktop
     Value: 727520
@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Enviroment.bank
   Name: Enviroment
   StudioPath: bank:/Enviroment
-  lastModified: 637882427446907999
+  lastModified: 637882367412912599
   FileSizes:
   - Name: Desktop
     Value: 455360
@@ -183,7 +183,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637882165417537197
+  lastModified: 637882367413217788
   FileSizes:
   - Name: Desktop
     Value: 2198
@@ -254,7 +254,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Interactables.bank
   Name: Interactables
   StudioPath: bank:/Interactables
-  lastModified: 637882165417527104
+  lastModified: 637882367413137773
   FileSizes:
   - Name: Desktop
     Value: 222528
@@ -383,7 +383,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Cutscene.bank
   Name: Cutscene
   StudioPath: bank:/Cutscene
-  lastModified: 637882349245963014
+  lastModified: 637882367412262369
   FileSizes:
   - Name: Desktop
     Value: 2288064
@@ -430,7 +430,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637882427447147315
+  lastModified: 637882367413597871
   FileSizes:
   - Name: Desktop
     Value: 2853344
@@ -450,7 +450,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637882427446917832
+  lastModified: 637882367413187894
   FileSizes:
   - Name: Desktop
     Value: 3800
@@ -527,7 +527,7 @@ MonoBehaviour:
   - {fileID: -1322144442078796533}
   StringsBanks:
   - {fileID: -5819696782632001608}
-  cacheTime: 637882427447147315
+  cacheTime: 637882367413827928
   cacheVersion: 10
 --- !u!114 &1175162954563623149
 MonoBehaviour:
@@ -599,7 +599,7 @@ MonoBehaviour:
   Path: FMODSession/Build/Desktop/DX.bank
   Name: DX
   StudioPath: bank:/DX
-  lastModified: 637882427446878043
+  lastModified: 637882367412642555
   FileSizes:
   - Name: Desktop
     Value: 1721504
