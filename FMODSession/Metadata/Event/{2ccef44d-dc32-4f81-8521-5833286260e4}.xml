@@ -5,7 +5,7 @@
 			<value>VoiceMessages</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c9a25b81-3a9c-4c6c-a9dc-713184c1830d}</destination>
@@ -136,6 +136,9 @@
 		<property name="timelockedOffset">
 			<value>0.59874763957307042</value>
 		</property>
+		<property name="volume">
+			<value>5</value>
+		</property>
 		<relationship name="fadeInCurve">
 			<destination>{4cf5a4c2-efc9-421c-b5e2-35dbfd8d8c85}</destination>
 		</relationship>
@@ -172,6 +175,9 @@
 		</property>
 		<property name="length">
 			<value>47.616</value>
+		</property>
+		<property name="volume">
+			<value>5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{377add34-791d-4e88-a4f6-b72b09709576}</destination>
@@ -310,6 +316,7 @@
 		<relationship name="effects">
 			<destination>{235e6031-334e-4d37-a60a-50b7798f599c}</destination>
 			<destination>{95968fe4-7a90-4d58-b584-00c4d779f153}</destination>
+			<destination>{2330b2f7-3d02-42b4-be70-10901f765762}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{33992c32-dca7-46c2-b30b-67d2bd864bef}" />
@@ -480,6 +487,14 @@
 		</property>
 		<property name="crossoverSlope">
 			<value>2</value>
+		</property>
+	</object>
+	<object class="PannerEffect" id="{2330b2f7-3d02-42b4-be70-10901f765762}">
+		<property name="stereoPan">
+			<value>32</value>
+		</property>
+		<property name="overridingOutputFormat">
+			<value>0</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{1f8ff0f6-21a1-4c3d-8437-aa1012971dc9}">
