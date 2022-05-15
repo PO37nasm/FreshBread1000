@@ -111,10 +111,10 @@
 			<value>9000</value>
 		</property>
 		<property name="minimumScatterDistance">
-			<value>5.20000029</value>
+			<value>2.4000001</value>
 		</property>
 		<property name="maximumScatterDistance">
-			<value>27.5</value>
+			<value>10</value>
 		</property>
 		<property name="volumeRandomization">
 			<value>-1</value>
@@ -134,7 +134,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{25ef0bf6-110b-4aef-b3b5-02ec9029e44f}">
 		<property name="volume">
-			<value>6.5</value>
+			<value>10</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -206,6 +206,12 @@
 	<object class="MixerBusPanner" id="{281fc15b-0996-4067-804b-47afb617d962}" />
 	<object class="MixerBusFader" id="{6cc6a004-9136-4f2a-a038-bcf5d386dd0a}" />
 	<object class="SpatialiserEffect" id="{0c700d68-f140-41f5-9d77-036cce0ae6d3}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>35</value>
+		</property>
 		<property name="extentMode">
 			<value>2</value>
 		</property>
