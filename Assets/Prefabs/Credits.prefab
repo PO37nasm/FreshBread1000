@@ -347,10 +347,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Vivian Gwaspari, Writer & Narrative Designer, @viviangwaspari\nBeck Hemsley,
-    Artist (Environment and Texturing), @beckh_art\nGeorge Oakley, Artist (3D Modelling),
-    artstation.com/georgeoakey5\nMatthew Watson, Technical Sound Designer, @GamewaveAudio\nLeo
-    Burns, Unity Programmer and Game Designer. \n[ferkeshu]\nolimist]"
+  m_text: 'Vivian Gwaspari, Writer & Narrative Designer, @viviangwaspari
+
+    Beck
+    Hemsley, Artist (Environment and Texturing), @beckh_art
+
+    George Oakley, Artist
+    (3D Modelling), artstation.com/georgeoakey5
+
+    Matthew Watson, Technical Sound
+    Designer, @GamewaveAudio
+
+    Leo Burns, Unity Programmer and Game Designer
+
+    Ferk,
+    Music'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4d6bd7e31c8381409308d9363afe441, type: 2}
   m_sharedMaterial: {fileID: 8799910848977933315, guid: b4d6bd7e31c8381409308d9363afe441, type: 2}

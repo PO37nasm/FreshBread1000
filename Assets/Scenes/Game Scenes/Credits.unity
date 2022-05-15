@@ -538,11 +538,10 @@ MonoBehaviour:
     Matthew Watson, Technical Sound
     Designer, @GamewaveAudio
 
-    [leo]
+    Leo Burns, Unity Programmer and Game Designer
 
-    [ferkeshu]
-
-    olimist]'
+    Ferk,
+    Music'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4d6bd7e31c8381409308d9363afe441, type: 2}
   m_sharedMaterial: {fileID: 8799910848977933315, guid: b4d6bd7e31c8381409308d9363afe441, type: 2}
@@ -1494,7 +1493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 311.39}
+  m_AnchoredPosition: {x: 0, y: 327}
   m_SizeDelta: {x: 1492.448, y: 228.575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1220846526
@@ -1564,7 +1563,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 40
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
