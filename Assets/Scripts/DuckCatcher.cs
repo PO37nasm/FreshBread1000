@@ -19,6 +19,7 @@ public class DuckCatcher : MonoBehaviour
             Instantiate<GameObject>(duck, caughtDuckSpawnPoint);
             Destroy(collision.gameObject);
             FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Interactables/PickupItem", gameObject);
+            GameManager.AddDuck();
         }
     }
 }

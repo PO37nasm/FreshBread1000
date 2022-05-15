@@ -773,7 +773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7161852840436213027, guid: 44879f6ac48ffaf43b7038bcee9afb2e, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7161852840436213027, guid: 44879f6ac48ffaf43b7038bcee9afb2e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2491,8 +2491,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 730985069}
   - {fileID: 1699086127}
+  - {fileID: 730985069}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2543,7 +2543,7 @@ RectTransform:
   - {fileID: 1220846525}
   - {fileID: 1222832266}
   m_Father: {fileID: 1661562416}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

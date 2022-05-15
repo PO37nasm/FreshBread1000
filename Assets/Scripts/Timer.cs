@@ -17,6 +17,8 @@ public class Timer: MonoBehaviour
     [SerializeField]
     public UnityEvent onTimeUpEvent;
 
+    private bool done = false;
+
     private void Start()
     {
         startTime = Time.fixedTime;
@@ -53,11 +55,10 @@ public class Timer: MonoBehaviour
             }
         }
 
-        if (Time.timeSinceLevelLoad > totalTime)
+        if (Time.timeSinceLevelLoad > totalTime && done == false)
         {
-            //timer.gameObject.SetActive(false);
             onTimeUpEvent.Invoke();
-            //GetComponent<GameOverMenu>().GameOver();
+            done = true;
         }
         if (Time.timeSinceLevelLoad > totalTime - countDownStartTime && !countDownStarted)
         {

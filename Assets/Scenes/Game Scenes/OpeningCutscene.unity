@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1077185277}
   transitionTime: 1
-  nextScene: 3
+  nextScene: 2
 --- !u!1 &2094760951
 GameObject:
   m_ObjectHideFlags: 0

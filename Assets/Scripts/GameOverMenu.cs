@@ -11,7 +11,8 @@ public class GameOverMenu : MonoBehaviour
     public int currentScene;
     [SerializeField]
     private TMP_Text scoreUI;
-    
+    [SerializeField]
+    private TMP_Text creditsScoreUI;
 
     public void GameOver()
     {
@@ -19,7 +20,7 @@ public class GameOverMenu : MonoBehaviour
         Time.timeScale = 0f;
         gameOverUI.SetActive(true);
         GameIsOver = true;
-        scoreUI.text = GetScore();
+        SetScoreUI();
         PauseMenu.GameIsPaused = true;
     }
 
@@ -34,6 +35,17 @@ public class GameOverMenu : MonoBehaviour
 
     public static string GetScore()
     {
-        return "Ducks Collected: " + GameManager.ducksCollected;
+        return  " " + GameManager.ducksCollected + " ";
+    }
+
+    public void SetScoreUI()
+    {
+        scoreUI.text = "Hand in" + GetScore() + "ducks?";
+    }
+
+    public void SetCreditsScore()
+    {
+        creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, but there are still so many left...";
+
     }
 }
