@@ -12,13 +12,15 @@ public class DuckSpawner : MonoBehaviour
     private int duckTotal;
     [SerializeField]
     private Terrain terrain;
+    [SerializeField]
+    private float areaSizeMultiplier = 1f;
 
     private void Start()
     {
         int i = 0;
         while (i <= duckTotal)
         {
-            Vector3 spawnPoint = new Vector3(Random.Range(terrain.terrainData.bounds.min.x, terrain.terrainData.bounds.max.x) - terrain.terrainData.bounds.extents.x, 2, Random.Range(terrain.terrainData.bounds.min.z, terrain.terrainData.bounds.max.z) - terrain.terrainData.bounds.extents.z);
+            Vector3 spawnPoint = new Vector3(Random.Range(terrain.terrainData.bounds.min.x, terrain.terrainData.bounds.max.x) - terrain.terrainData.bounds.extents.x, 2, Random.Range(terrain.terrainData.bounds.min.z, terrain.terrainData.bounds.max.z) - terrain.terrainData.bounds.extents.z) * areaSizeMultiplier;
 
             if (terrain.SampleHeight(spawnPoint) < 55)
             {
