@@ -48,22 +48,28 @@ public class GameOverMenu : MonoBehaviour
         if (GameManager.ducksCollected == 1000)
         {
             creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks... Incredible! You know I really thought that would be impossible.";
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Cutscenes/1000Collected");
         }
         else if (GameManager.ducksCollected >= 900)
         {
             creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, not too many left...";
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Cutscenes/900Collected");
         }
         else if (GameManager.ducksCollected >= 500)
         {
             creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, an impressive effort...";
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Cutscenes/500Collected");
+
         }
         else if (GameManager.ducksCollected < 1)
         {
             creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, come on, really?";
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Cutscenes/NoneCollected");
         }
         else
         {
             creditsScoreUI.text = "You collected" + GetScore() + "out of 1000 ducks, but there are still so many left...";
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Cutscenes/Collected");
         }
 
 
