@@ -517,7 +517,7 @@ MonoBehaviour:
   body: {fileID: 793899603382459060}
   speed: 12
   rotationTorque: 30
-  rescueDropLocation: {x: 172, y: 2, z: 61}
+  rescueDropLocation: {x: 172, y: 0, z: 61}
 --- !u!136 &793899603382459057
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -47,6 +47,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public void Rescue()
     {
         transform.position = rescueDropLocation;
+        transform.rotation = Quaternion.identity;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 
 }
